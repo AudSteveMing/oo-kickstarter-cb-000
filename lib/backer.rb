@@ -13,15 +13,16 @@ def back_project(project)
   @backed_projects << project
   project.add_backer(self)
 
+end
+
 def add_backer(project)
   @backed_projects << project
+end
 
   # def add_backer(backer)
   #   @backers << backer
   #   backer.back_project(rope)
   # ropes.add_backer(arel)
-
-end
 
 def backed_projects
  @backed_projects
