@@ -10,7 +10,7 @@ end
 
 def add_backer(backer)
   @backers << backer
-  
+  backer.add_backer(self)
   # backer.back_project(self)
   # ropes.add_backer(arel)
 
